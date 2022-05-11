@@ -29,14 +29,13 @@ format:
 
 
 # Modelagem Estatística
-::: {.incremental}
-- Afinal, o que é isso?
 
-
-
-:::
+![](https://c.tenor.com/JNGtStZqQOEAAAAC/tony-tony-chopper-chopper.gif){.absolute top=410 right=300 width="450" height="750"}
 
 ## Modelagem
+
+
+
 
 * Em Estatística, em geral, um **modelo** é algo que recebe uma estrutura que contém números e devolve um número.
 
@@ -111,15 +110,10 @@ $$
 
 * Fácilidade para fazer Inferência
 * Convergência dos estimadores
+* Nem sempre é satisfeita
 
 
-```{r}
-library(ggplot2)
-df <- data.frame(PF = 10*rnorm(1000))
-ggplot(df, aes(x = PF)) + 
-stat_function(fun = dnorm, args = list(mean = mean(df$PF), sd = sd(df$PF)))+
-theme_bw()
-```
+![](https://i.gifer.com/1srZ.gif){.absolute top=410 right=350 width="250" height="250"}
 
 ## Proposta
 
@@ -128,32 +122,9 @@ theme_bw()
 * Estimador de Máxima verossimilhança
 * Resíduo Quantílico
 
-## {auto-animate=true auto-animate-easing="ease-in-out"}
-
-::: {.r-hstack}
-::: {data-id="box1" auto-animate-delay="0" style="background: #EF3508; width: 200px; height: 150px; margin: 10px;"}
-:::
-
-::: {data-id="box2" auto-animate-delay="0.1" style="background: #3fb618; width: 200px; height: 150px; margin: 10px;"}
-:::
-
-::: {data-id="box3" auto-animate-delay="0.2" style="background: #e83e8c; width: 200px; height: 150px; margin: 10px;"}
-:::
-:::
-
-## {auto-animate=true auto-animate-easing="ease-in-out"}
-
-::: {.r-stack}
-::: {data-id="box1" style="background: #EF3508; width: 350px; height: 350px; border-radius: 200px;"}
-:::
-
-::: {data-id="box2" style="background: #3fb618; width: 250px; height: 250px; border-radius: 200px;"}
-:::
-
-::: {data-id="box3" style="background: #e83e8c; width: 150px; height: 150px; border-radius: 200px;"}
-:::
-:::
-
+$$
+\phi^{-1}(F(y_t;\hat{\lambda}, \hat{\mu}, \tau))
+$$
 
 
 
