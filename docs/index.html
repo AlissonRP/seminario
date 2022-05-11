@@ -401,24 +401,29 @@
 </ul>
 <p><br></p>
 <ul>
-<li class="fragment">Programação e <a href="https://r-pkgs.org">Pacotes</a></li>
+<li class="fragment">Programação e <a href="https://github.com/AlissonRP/chenReg">Pacotes</a></li>
 </ul>
 <p><br></p>
 <ul>
-<li class="fragment">Aplicação web</li>
+<li class="fragment"><a href="https://alissonrp.shinyapps.io/full_app/?_ga=2.140772210.1929692591.1652289371-1564274603.1652155237">Aplicação web</a></li>
 </ul>
 </div>
 </section>
 <section>
 <section id="modelagem-estatística" class="title-slide slide level1 center">
 <h1>Modelagem Estatística</h1>
-<p><img data-src="https://c.tenor.com/JNGtStZqQOEAAAAC/tony-tony-chopper-chopper.gif" class="absolute" style="top: 410px; right: 300px; width: 450px; height: 750px; "></p>
+<p><img data-src="https://c.tenor.com/JNGtStZqQOEAAAAC/tony-tony-chopper-chopper.gif" class="absolute" style="top: 410px; right: 300px; width: 450px; height: 850px; "></p>
 </section>
 <section id="modelagem" class="slide level2">
 <h2>Modelagem</h2>
 <ul>
 <li>Em Estatística, em geral, um <strong>modelo</strong> é algo que recebe uma estrutura que contém números e devolve um número.</li>
 </ul>
+<div class="fragment fade-in">
+<div class="fragment highlight-red">
+<p>Estrutura de Dados <span class="math inline">\(\rightarrow\)</span> Função <span class="math inline">\(\rightarrow\)</span> Número</p>
+</div>
+</div>
 </section>
 <section id="três-componentes-principais" class="slide level2">
 <h2>Três Componentes Principais</h2>
@@ -460,13 +465,8 @@ Y = \beta_0 + \beta_1X  + \epsilon
 <ul>
 <li>Uma regressão é uma função dos dados que tem como objetivo predizer um número<br>
 </li>
-<li>Em regressão linear tentasse predizer a variável de interesse (<span class="math inline">\(Y\)</span>) supondo que que as variáveis explicativas se relacionam linearmente com <span class="math inline">\(Y\)</span>.</li>
+<li>Em regressão linear supõe-se que a variável de interesse (<span class="math inline">\(Y\)</span>) se relaciona linearmente com as variáveis explicativas (<strong>X</strong>).</li>
 </ul>
-<div class="fragment fade-in">
-<div class="fragment highlight-red">
-<p>Dados <span class="math inline">\(\rightarrow\)</span> Função <span class="math inline">\(\rightarrow\)</span> Número</p>
-</div>
-</div>
 <p><span class="math display">\[
 Y = \beta_0 + \beta_1X_1  + \epsilon
 \]</span></p>
@@ -498,10 +498,11 @@ Y = \beta_0 + \beta_1X_1 + \beta_2e^{(X_2)} + \epsilon
 <section id="proposta" class="slide level2">
 <h2>Proposta</h2>
 <ul>
-<li>Desenvolver o modelo de regressão quantílico Chen</li>
-<li>Reparametrização da distribuição</li>
-<li>Estimador de Máxima verossimilhança</li>
-<li>Resíduo Quantílico</li>
+<li><p>Desenvolver o modelo de regressão quantílico Chen</p></li>
+<li><p>Reparametrização da distribuição <span class="math display">\[
+g(\mu) = \sum_i \beta_{i} X_{i}
+\]</span></p></li>
+<li><p>Resíduo Quantílico</p></li>
 </ul>
 <p><span class="math display">\[
 \phi^{-1}(F(y_t;\hat{\lambda}, \hat{\mu}, \tau))
@@ -669,8 +670,8 @@ Coefficients:
 </div>
 <p><img data-src="https://github.com/AlissonRP/mypdf1/blob/main/man/figures/fig/mypdf1.png?raw=true" class="absolute" style="top: 20px; right: 50px; width: 150px; height: 150px; "></p>
 </section>
-<section id="elementos-fundamentais-de-um-pacote" class="slide level2">
-<h2>Elementos fundamentais de um Pacote</h2>
+<section id="elementos-fundamentais" class="slide level2">
+<h2>Elementos fundamentais</h2>
 <ul>
 <li><p>Documentação</p></li>
 <li><p>Dependências</p></li>

@@ -19,18 +19,18 @@ format:
 
 <br />
 
-- Programação e [Pacotes](https://r-pkgs.org)
+- Programação e [Pacotes](https://github.com/AlissonRP/chenReg)
 
 <br />
 
-- Aplicação web
+- [Aplicação web](https://alissonrp.shinyapps.io/full_app/?_ga=2.140772210.1929692591.1652289371-1564274603.1652155237)
 :::
 
 
 
 # Modelagem Estatística
 
-![](https://c.tenor.com/JNGtStZqQOEAAAAC/tony-tony-chopper-chopper.gif){.absolute top=410 right=300 width="450" height="750"}
+![](https://c.tenor.com/JNGtStZqQOEAAAAC/tony-tony-chopper-chopper.gif){.absolute top=410 right=300 width="450" height="850"}
 
 ## Modelagem
 
@@ -38,6 +38,13 @@ format:
 
 
 * Em Estatística, em geral, um **modelo** é algo que recebe uma estrutura que contém números e devolve um número.
+
+::: {.fragment .fade-in}
+::: {.fragment .highlight-red}
+Estrutura de Dados $\rightarrow$ Função $\rightarrow$ Número
+:::
+:::
+
 
 ## Três Componentes Principais
 
@@ -77,13 +84,9 @@ Um número:
 
 ## Modelos de Regressão Linear
 * Uma regressão é uma função dos dados que tem como objetivo predizer um número  
-* Em regressão linear tentasse predizer a variável de interesse ($Y$) supondo que que as variáveis explicativas se relacionam linearmente com $Y$.
+* Em regressão linear supõe-se que a  variável de interesse ($Y$) se relaciona  linearmente com as variáveis explicativas (**X**).
 
-::: {.fragment .fade-in}
-::: {.fragment .highlight-red}
-Dados $\rightarrow$ Função $\rightarrow$ Número
-:::
-:::
+
 
 
 $$
@@ -119,7 +122,10 @@ $$
 
 * Desenvolver o modelo de regressão quantílico Chen
 * Reparametrização da distribuição
-* Estimador de Máxima verossimilhança
+$$
+g(\mu) = \sum_i \beta_{i} X_{i}
+$$
+
 * Resíduo Quantílico
 
 $$
@@ -234,7 +240,8 @@ mypdf1::pdf1_tbl('')
 ![](https://github.com/AlissonRP/mypdf1/blob/main/man/figures/fig/mypdf1.png?raw=true){.absolute top=20 right=50 width="150" height="150"}
 
 
-## Elementos fundamentais de um Pacote
+## Elementos fundamentais 
+
 * Documentação
 
 
